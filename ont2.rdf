@@ -1,0 +1,3065 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ontology/bibo/"
+     xml:base="http://purl.org/ontology/bibo/"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:dk="file:/Users/dk/Documents/Temp/sadfkhsadfvashj"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:basic="http://prismstandard.org/namespaces/1.2/basic/"
+     xmlns:amrita="http://www.amrita.org/terms#">
+    <owl:Ontology rdf:about="http://purl.org/ontology/bibo/">
+        <dc:creator rdf:resource="http://purl.org/ontology/bibo/bdarcus"/>
+        <dc:creator rdf:resource="http://purl.org/ontology/bibo/fgiasson"/>
+        <dc:description xml:lang="en">The Bibliographic Ontology describes
+bibliographic things on the semantic Web in RDF.  This ontology can be
+used as a citation ontology, as a document classification ontology, or
+simply as a way to describe any kind of document in RDF. It has been
+inspired by many existing document description metadata formats, and
+can be used as a common ground for converting other bibliographic data
+sources.</dc:description>
+        <dc:title>The Bibliographic Ontology</dc:title>
+        <owl:versionInfo>http://purl.org/ontology/bibo/1.3/</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.amrita.org/terms#authors -->
+
+    <owl:AnnotationProperty rdf:about="http://www.amrita.org/terms#authors">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.amrita.org/terms#totalCitations -->
+
+    <owl:AnnotationProperty rdf:about="http://www.amrita.org/terms#totalCitations">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#agent -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#agent">
+        <skos:changeNote xml:lang="en">Used to link an agent (a person) to an event (a conference, an hearing, etc.)</skos:changeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#place -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#place">
+        <skos:scopeNote xml:lang="en">Used to relate an event such as a conference to the geographical place where it happens, for example Paris.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#produced_in -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#produced_in"/>
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#product -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#product">
+        <skos:scopeNote xml:lang="en">Used to link an event such as a conference to an outcome (a product) of that event, for example, an article, a proceeding, etc.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#sub_event -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#sub_event">
+        <skos:scopeNote xml:lang="en">Used to link big events with smaller events such as workshops that happen in the context of a conference.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#time -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#time">
+        <skos:scopeNote xml:lang="en">Used to describe the timing of an event. For example, when a conference starts and stops.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <skos:scopeNote xml:lang="en">Used to link a bibliographic item to one of its contributor: can be an author, an editor, a publisher, etc.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/format">
+        <skos:example xml:lang="en">&lt;dcterms:format&gt;
+   &lt;dcterms:MediaTypeOrExtent&gt;
+     &lt;rdf:value&gt;text/html&lt;/rdf:value&gt;
+     &lt;rdfs:label&gt;HTML&lt;/rdfs:label&gt;
+   &lt;/dcterms:MediaTypeOrExtent&gt;
+ &lt;/dcterms:format&gt;</skos:example>
+        <skos:scopeNote xml:lang="en">Used to describe the format of a bibliographic resource.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/hasPart"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReferencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isReferencedBy">
+        <skos:scopeNote xml:lang="en">Used to relate a reference citation to a bibliographic resource.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isVersionOf"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/language">
+        <skos:scopeNote xml:lang="en">Used to link a bibliographic resource to the language used to express it.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <skos:scopeNote xml:lang="en">Used to link a bibliographic item to its publisher.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/relation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/rights">
+        <skos:scopeNote xml:lang="en">Used to describe rights related to a bibliographic resource.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/subject">
+        <skos:scopeNote xml:lang="en">Used to describe the subject of a bibliographic resource.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/affirmedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/affirmedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/subsequentLegalDecision"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
+        <rdfs:comment xml:lang="en">A legal decision that affirms a ruling.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/annotates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/annotates">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Note"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="en">Critical or explanatory note for a Document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">annotates</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/authorList -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/authorList">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/contributorList"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">An ordered list of authors. Normally, this list is seen as a priority list that order authors by importance.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">list of authors</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/citedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/citedBy">
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/bibo/cites"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">Relates a document to another document that cites the
+first document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">cited by</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/cites -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/cites">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/references"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">Relates a document to another document that is cited
+by the first document as reference, comment, review, quotation or for
+another purpose.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">cites</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/contributorList -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/contributorList">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">An ordered list of contributors. Normally, this list is seen as a priority list that order contributors by importance.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">list of contributors</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/court -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/court">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:comment xml:lang="en">A court associated with a legal document; for example, that which issues a decision.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">court</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/degree -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/degree">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/ThesisDegree"/>
+        <rdfs:comment xml:lang="en">The thesis degree.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">degree</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+        <skos:editorialNote xml:lang="en">We are not defining, using an enumeration, the range of the bibo:degree to the defined list of bibo:ThesisDegree. We won&apos;t do it because we want people to be able to define new degress if needed by some special usecases. Creating such an enumeration would restrict this to happen.</skos:editorialNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/director -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/director">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/AudioVisualDocument"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">A Film director.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label>director</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/distributor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/distributor">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">Distributor of a document or a collection of documents.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">distributor</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/editor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/editor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">A person having managerial and sometimes policy-making responsibility for the editorial part of a publishing firm or of a newspaper, magazine, or other publication.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label>editor</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/editorList -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/editorList">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/contributorList"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">An ordered list of editors. Normally, this list is seen as a priority list that order editors by importance.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">list of editors</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/interviewee -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/interviewee">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">An agent that is interviewed by another agent.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label>interviewee</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/interviewer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/interviewer">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">An agent that interview another agent.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label>interviewer</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/issuer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/issuer">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>An entity responsible for issuing often informally published documents such as press releases, reports, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label>issuer</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/organizer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/organizer">
+        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">The organizer of an event; includes conference organizers, but also government agencies or other bodies that are responsible for conducting hearings.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">organizer</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/owner -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/owner">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">Owner of a document or a collection of documents.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">owner</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/performer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/performer">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Performance"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label>performer</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/presentedAt -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/presentedAt">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#produced_in"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/bibo/presents"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Event"/>
+        <rdfs:comment xml:lang="en">Relates a document to an event; for example, a paper to a conference.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">presented at</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/presents -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/presents">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#product"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Event"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">Relates an event to associated documents; for example, conference to a paper.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">presents</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/producer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/producer">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">Producer of a document or a collection of documents.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">producer</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/recipient -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/recipient">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/PersonalCommunicationDocument"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">An agent that receives a communication document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label>recipient</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/reproducedIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/reproducedIn">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">The resource in which another resource is reproduced.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/reversedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/reversedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/subsequentLegalDecision"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
+        <rdfs:comment xml:lang="en">A legal decision that reverses a ruling.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/reviewOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/reviewOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="en">Relates a review document to a reviewed thing (resource, item, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">review of</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/status">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">The publication status of (typically academic) content.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">status</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+        <skos:editorialNote xml:lang="en">We are not defining, using an enumeration, the range of the bibo:status to the defined list of bibo:DocumentStatus. We won&apos;t do it because we want people to be able to define new status if needed by some special usecases. Creating such an enumeration would restrict this to happen.</skos:editorialNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/subsequentLegalDecision -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/subsequentLegalDecision">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isReferencedBy"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
+        <rdfs:comment xml:lang="en">A legal decision on appeal that takes action on a case (affirming it, reversing it, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/transcriptOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/transcriptOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="en">Relates a document to some transcribed original.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">transcript of</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/translationOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/translationOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isVersionOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">Relates a translated document to the original document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">translation of</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/translator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/translator">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">A person who translates written document from one language to another.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label>translator</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.amrita.org/terms#has_paper -->
+
+    <owl:ObjectProperty rdf:about="http://www.amrita.org/terms#has_paper">
+        <owl:inverseOf rdf:resource="http://www.amrita.org/terms#published_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.amrita.org/terms#published_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.amrita.org/terms#published_in">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+        <skos:scopeNote xml:lang="en">Used to describe the content of a bibo:Document and othr bibliographic resouces.
+
+We suggest to use this property instead of the deprecated &quot;bibo:content&quot; one.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/based_near -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/based_near">
+        <skos:scopeNote xml:lang="en">Used to link an agent, related to bibliographic things, to a place where it is based near: can be a city, a monument, a building, etc.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <skos:scopeNote xml:lang="en">Used to link an agent with an image that depict it.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/homepage">
+        <skos:scopeNote xml:lang="en">Used to link an agent to its homepage (which is a web page accessible using a URL).</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/doi -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/doi">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/doi"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/eIssn -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/eIssn">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/eissn"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/edition -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/edition">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/edition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/endingPage -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/endingPage">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/isbn -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/isbn">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/isbn"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/issn -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/issn">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/issn"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/issue -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/issue">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/issue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/number -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/number">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/locator"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/startingPage -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/startingPage">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/1.2/basic/volume -->
+
+    <owl:DatatypeProperty rdf:about="http://prismstandard.org/namespaces/1.2/basic/volume">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/volume"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <skos:scopeNote xml:lang="en">Used to describe the creation date of a bibliographic item</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date">
+        <skos:scopeNote xml:lang="en">Use to link a bibliographic item to the date of an event. Check dcterms:created and other for proper specializations for this property</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/issued">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+        <skos:scopeNote xml:lang="en">Used to describe the issue date of a bibliographic resource</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/abstract">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>A summary of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label>abstract</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/argued -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/argued">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The date on which a legal case is argued before a court. Date is of format xsd:date</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">date argued</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/asin -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/asin">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/chapter -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/chapter">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">An chapter number</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">chapter</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/coden -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/coden">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/content -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/content">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">This property is for a plain-text rendering of the content of a Document. While the plain-text content of an entire document could be described by this property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">content</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <vs:term_status>unstable</vs:term_status>
+        <skos:historyNote xml:lang="en">bibo:content has been deprecated; we recommend to use &quot;rdf:value&quot; for this purpose. Here is the rational behind this choice: http://www.w3.org/TR/2004/REC-rdf-primer-20040210/#rdfvalue</skos:historyNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/doi">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/eanucc13 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/eanucc13">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/edition -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/edition">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The name defining a special edition of a document. Normally its a literal value composed of a version number and words.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">edition</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/eissn -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/eissn">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/gtin14 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/gtin14">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/handle -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/handle">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/identifier">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/isbn -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/isbn">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/isbn10 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/isbn10">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/isbn"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/isbn13 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/isbn13">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/isbn"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/issn -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/issn">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/issue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/issue">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">An issue number</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">issue</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/lccn -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/lccn">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/locator -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/locator">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A description (often numeric) that locates an item within a containing document or collection.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">locator</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/numPages -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/numPages">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The number of pages contained in a document</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">number of pages</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/numVolumes -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/numVolumes">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The number of volumes contained in a collection of documents (usually a series, periodical, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">number of volumes</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/number -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/number">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A generic item or document number. Not to be confused with issue number.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">number</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/oclcnum -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/oclcnum">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/pageEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/pageEnd">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Ending page number within a continuous page range.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">page end</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/pageStart -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/pageStart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Starting page number within a continuous page range.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">page start</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/pages -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/pages">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">pages</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/pmid -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/pmid">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/prefixName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/prefixName">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The prefix of a name</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">prefix name</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/section -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/section">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A section number</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">section</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+        <skos:example xml:lang="en">Di Rado, Alicia. 1995. Trekking through college: Classes explore
+modern society using the world of Star trek. Los Angeles Times, March
+15, sec. A, p. 3.</skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/shortDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/shortDescription">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/shortTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/shortTitle">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The abbreviation of a title.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">short title</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/sici -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/sici">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/suffixName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/suffixName">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">The suffix of a name</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">suffix name</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/upc -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/upc">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/uri -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/uri">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Universal Resource Identifier of a document</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">uri</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/volume -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/volume">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A volume number</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">volume</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schemas.talis.com/2005/address/schema#localityName -->
+
+    <owl:DatatypeProperty rdf:about="http://schemas.talis.com/2005/address/schema#localityName">
+        <skos:scopeNote xml:lang="en">Used to name the locality of a publisher, an author, etc.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.amrita.org/terms#date_published -->
+
+    <owl:DatatypeProperty rdf:about="http://www.amrita.org/terms#date_published">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/family_name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/family_name">
+        <skos:scopeNote xml:lang="en">This is the property we choose to use to describe the family name of a person related to a bibliographic resource.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/givenname -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/givenname">
+        <skos:scopeNote xml:lang="en">This is the property we choose to describe the given name of a Person related to a bibliographic resource. This is the first name of a person.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#Event -->
+
+    <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
+        <skos:scopeNote xml:lang="en">Used to describe bibliographic related events such as conferences, hearing, etc.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <skos:editorialNote xml:lang="en">BIBO assert that a dcterms:Agent is an equivalent class to foaf:Agent.
+This means that all the individuals belonging to the foaf:Agent class
+also belongs to the dcterms:Agent class. This way, dcterms:contributor
+can be used on foaf:Person, foaf:Organization, foaf:Agent and foaf:Group.
+Even if this link is not done in neither the FOAF nor the DCTERMS ontologies this is a wide spread fact that is asserted by BIBO.</skos:editorialNote>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/AcademicArticle -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/AcademicArticle">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
+        <rdfs:comment xml:lang="en">A scholarly academic article, typically published in a journal.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Academic Article</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Article -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Article">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a book or other publication, as a newspaper or magazine.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Article</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/AudioDocument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/AudioDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">An audio document; aka record.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">audio document</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/AudioVisualDocument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/AudioVisualDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">An audio-visual document; film, video, and so forth.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">audio-visual document</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Bill -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Bill">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Legislation"/>
+        <rdfs:comment xml:lang="en">Draft legislation presented for discussion to a legal body.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Bill</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Book -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Book">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Book</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/BookSection -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/BookSection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+        <rdfs:comment xml:lang="en">A section of a book.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Book Section</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Brief -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Brief">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/LegalCaseDocument"/>
+        <rdfs:comment xml:lang="en">A written argument submitted to a court.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Brief</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Chapter -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Chapter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
+        <rdfs:comment xml:lang="en">A chapter of a book.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Chapter</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Code -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Code">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Legislation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A collection of statutes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Code</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/CollectedDocument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/CollectedDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A document that simultaneously contains other documents.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Collected Document</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Collection -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Collection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
+                            <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A collection of Documents or Collections</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Conference -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Conference">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:comment xml:lang="en">A meeting for consultation or discussion.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Conference</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/CourtReporter -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/CourtReporter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A collection of legal cases.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Court Reporter</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Document -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:comment xml:lang="en">A document (noun) is a bounded physical representation of body of information designed with the capacity (and usually intent) to communicate. A document may manifest symbolic, diagrammatic or sensory-representational information.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/DocumentPart -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/DocumentPart">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">a distinct part of a larger document or collected document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">document part</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/DocumentStatus -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/DocumentStatus">
+        <rdfs:comment xml:lang="en">The status of the publication of a document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Document Status</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/EditedBook -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/EditedBook">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/CollectedDocument"/>
+        <rdfs:comment xml:lang="en">An edited book.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Edited Book</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Email -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Email">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/PersonalCommunicationDocument"/>
+        <rdfs:comment xml:lang="en">A written communication addressed to a person or organization and transmitted electronically.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">EMail</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Event -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Event"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Excerpt -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Excerpt">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+        <rdfs:comment xml:lang="en">A passage selected from a larger work.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Excerpt</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Film -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Film">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/AudioVisualDocument"/>
+        <rdfs:comment xml:lang="en">aka movie.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Film</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Hearing -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Hearing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:comment xml:lang="en">An instance or a session in which testimony and arguments are presented, esp. before an official, as a judge in a lawsuit.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Hearing</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Image -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Image">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A document that presents visual or diagrammatic information.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Interview -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Interview">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:comment xml:lang="en">A formalized discussion between two or more people.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Interview</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Issue -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Issue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/CollectedDocument"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Article"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">something that is printed or published and distributed, esp. a given number of a periodical</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Issue</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Journal -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Journal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A periodical of scholarly journal Articles.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Journal</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/LegalCaseDocument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/LegalCaseDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
+        <rdfs:comment xml:lang="en">A document accompanying a legal case.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Legal Case Document</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/LegalDecision -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/LegalDecision">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/LegalCaseDocument"/>
+        <rdfs:comment xml:lang="en">A document containing an authoritative determination (as a decree or judgment) made after consideration of facts or law.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Decision</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/LegalDocument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/LegalDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A legal document; for example, a court decision, a brief, and so forth.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Legal Document</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Legislation -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Legislation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
+        <rdfs:comment xml:lang="en">A legal document proposing or enacting a law or a group of laws.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Legislation</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Letter -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Letter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/PersonalCommunicationDocument"/>
+        <rdfs:comment xml:lang="en">A written or printed communication addressed to a person or organization and usually transmitted by mail.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Letter</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Magazine -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Magazine">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A periodical of magazine Articles. A magazine is a publication that is issued periodically, usually bound in a paper cover, and typically contains essays, stories, poems, etc., by many writers, and often photographs and drawings, frequently specializing in a particular subject or area, as hobbies, news, or sports.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Magazine</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Manual -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Manual">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A small reference book, especially one giving instructions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Manual</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Manuscript -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Manuscript">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">An unpublished Document, which may also be submitted to a publisher for publication.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Manuscript</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Map -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Map">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Image"/>
+        <rdfs:comment xml:lang="en">A graphical depiction of geographic features.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Map</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/MultiVolumeBook -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/MultiVolumeBook">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Book"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A loose, thematic, collection of Documents, often Books.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Multivolume Book</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Newspaper -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Newspaper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A periodical of documents, usually issued daily or weekly, containing current news, editorials, feature articles, and usually advertising.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Newspaper</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Note -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Note">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">Notes or annotations about a resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Note</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Patent -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Patent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A document describing the exclusive right granted by a government to an inventor to manufacture, use, or sell an invention for a certain number of years.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Patent</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Performance -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Performance">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:comment xml:lang="en">A public performance.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Performance</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Periodical -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Periodical">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A group of related documents issued at regular intervals.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Periodical</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/PersonalCommunication -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/PersonalCommunication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:comment xml:lang="en">A communication between an agent and one or more specific recipients.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Personal Communication</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/PersonalCommunicationDocument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/PersonalCommunicationDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A personal communication manifested in some document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Personal Communication Document</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Proceedings -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Proceedings">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Book"/>
+        <rdfs:comment xml:lang="en">A compilation of documents published from an event, such as a conference.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Proceedings</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Quote -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Quote">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Excerpt"/>
+        <rdfs:comment xml:lang="en">An excerpted collection of words.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Quote</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/ReferenceSource -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/ReferenceSource">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A document that presents authoritative reference information, such as a dictionary or encylopedia .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Reference Source</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Report -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Report">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A document describing an account or statement describing in detail an event, situation, or the like, usually as the result of observation, inquiry, etc..</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Report</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Series -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Series">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A loose, thematic, collection of Documents, often Books.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Series</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Slide -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Slide">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+        <rdfs:comment xml:lang="en">A slide in a slideshow</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Slide</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Slideshow -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Slideshow">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Slide"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A presentation of a series of slides, usually presented in front of an audience with written text and images.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Slideshow</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Specification -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Specification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A document describing a specification.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Specification</rdfs:label>
+        <vs:term_status>testing</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Standard -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Standard">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Specification"/>
+        <rdfs:comment xml:lang="en">A document describing a standard: a specification organized through a standards body.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Standard</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Statute -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Statute">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Legislation"/>
+        <rdfs:comment xml:lang="en">A bill enacted into law.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Statute</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Thesis -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Thesis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A document created to summarize research findings associated with the completion of an academic degree.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Thesis</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/ThesisDegree -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/ThesisDegree">
+        <rdfs:comment xml:lang="en">The academic degree of a Thesis</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Thesis degree</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Webpage -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Webpage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:comment xml:lang="en">A web page is an online document available (at least initially) on the world wide web. A web page is written first and foremost to appear on the web, as distinct from other online resources such as books, manuscripts or audio documents which use the web primarily as a distribution mechanism alongside other more traditional methods such as print.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Webpage</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Website -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Website">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Webpage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A group of Webpages accessible on the Web.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Website</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Workshop -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Workshop">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:comment xml:lang="en">A seminar, discussion group, or the like, that emphasizes zxchange of ideas and the demonstration and application of techniques, skills, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Workshop</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <skos:scopeNote xml:lang="en">Used to describe any &quot;agent&quot; related to bibliographic items. Such agents can be persons, organizations or groups of any kind.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Image -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Image"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <skos:scopeNote xml:lang="en">Ued to describe an organization related to bibliographic items such as a publishing company, etc.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <skos:scopeNote xml:lang="en">Used to describe a Person related to a bibliographic ite such as an author, an editor, etc.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/bibo/bdarcus -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/bdarcus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Bruce D&apos;Arcus</foaf:name>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/net/darcusb/info#me</rdfs:seeAlso>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/fgiasson -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/fgiasson">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Frederick Giasson</foaf:name>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://fgiasson.com/me/</rdfs:seeAlso>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/degrees/ma -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/degrees/ma">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/ThesisDegree"/>
+        <rdfs:comment xml:lang="en">masters degree in arts</rdfs:comment>
+        <rdfs:label xml:lang="en">M.A.</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/degrees/ms -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/degrees/ms">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/ThesisDegree"/>
+        <rdfs:comment xml:lang="en">masters degree in science</rdfs:comment>
+        <rdfs:label xml:lang="en">M.S.</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/degrees/phd -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/degrees/phd">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/ThesisDegree"/>
+        <rdfs:comment xml:lang="en">PhD degree</rdfs:comment>
+        <rdfs:label xml:lang="en">PhD degree</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status/accepted -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/status/accepted">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">Accepted for publication after peer reviewing.</rdfs:comment>
+        <rdfs:label xml:lang="en">accepted</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status/draft -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/status/draft">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">Document drafted</rdfs:comment>
+        <rdfs:label xml:lang="en">draft</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status/forthcoming -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/status/forthcoming">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">Document to be published</rdfs:comment>
+        <rdfs:label xml:lang="en">forthcoming</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status/legal -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/status/legal">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">Legal document</rdfs:comment>
+        <rdfs:label xml:lang="en">legal</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status/nonPeerReviewed -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/status/nonPeerReviewed">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">A document that is not peer reviewed</rdfs:comment>
+        <rdfs:label xml:lang="en">non peer reviewed</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status/peerReviewed -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/status/peerReviewed">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">The process by which articles are chosen to be included in a refereed journal. An editorial board consisting of experts in the same field as the author review the article and decide if it is authoritative enough for publication.</rdfs:comment>
+        <rdfs:label xml:lang="en">peer reviewed</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status/published -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/status/published">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">Published document</rdfs:comment>
+        <rdfs:label xml:lang="en">published</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status/rejected -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/status/rejected">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">Rejected for publication after peer reviewing.</rdfs:comment>
+        <rdfs:label xml:lang="en">rejected</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status/unpublished -->
+
+    <owl:Thing rdf:about="http://purl.org/ontology/bibo/status/unpublished">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+        <rdfs:comment xml:lang="en">Unpublished document</rdfs:comment>
+        <rdfs:label xml:lang="en">unpublished</rdfs:label>
+        <vs:term_status>stable</vs:term_status>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.amrita.org/terms#North-Holland -->
+
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#North-Holland">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.amrita.org/terms#Test1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test1">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+        <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
+        <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</basic:volume>
+        <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2015</dc:issued>
+        <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-54</pages>
+        <dc:description>Phishing is a fraudulent act t information from unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying …</dc:description>
+        <dc:title>An efficacious method for d through target domain identification</dc:title>
+        <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh, Kupesh</amrita:authors>
+        <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</amrita:totalCitations>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.amrita.org/terms#Test2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test2">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+        <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
+        <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</basic:volume>
+        <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2005</dc:issued>
+        <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-40</pages>
+        <dc:description>Phishing is a fraudulent act t unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying …</dc:description>
+        <dc:title>An efficacious method target domain identification</dc:title>
+        <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"> Kupesh</amrita:authors>
+        <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</amrita:totalCitations>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.amrita.org/terms#TestDocument -->
+
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#TestDocument">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+        <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
+        <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</basic:volume>
+        <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2014</dc:issued>
+        <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-50</pages>
+        <dc:description>Phishing is a fraudulent act to acquire sensitive information from unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying …</dc:description>
+        <dc:title>An efficacious method for detecting phishing webpages through target domain identification</dc:title>
+        <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh, Sanjay, Kupesh</amrita:authors>
+        <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</amrita:totalCitations>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.amrita.org/terms#journal -->
+
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#journal">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+        <skos:scopeNote xml:lang="en">Used to describe a bibliographic resource.</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+        <skos:scopeNote xml:lang="en">Used to describe the title of a bibliographic resource</skos:scopeNote>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Computers_and_Security">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#2022_6th_International_Conference_on_Trends_in_Electronics_and_Informatics,_ICOEI_2022_-_Proceedings">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Lecture_Notes_in_Networks_and_Systems">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Data_and_Knowledge_Engineering">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#International_Journal_of_Web-Based_Learning_and_Teaching_Technologies">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Decision_Support_Systems">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Journal_of_Intelligent_and_Fuzzy_Systems">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#2019_International_Conference_on_Intelligent_Computing_and_Control_Systems,_ICCS_2019">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Lecture_Notes_on_Data_Engineering_and_Communications_Technologies">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#International_Journal_of_Recent_Technology_and_Engineering">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Materials_Today:_Proceedings">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Electronic_Library">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#2017_International_Conference_on_Advances_in_Computing,_Communications_and_Informatics,_ICACCI_2017">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Lecture_Notes_in_Computational_Vision_and_Biomechanics">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Behaviour_and_Information_Technology">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Journal_of_Information_Security_and_Applications">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#International_Journal_of_Applied_Engineering_Research">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Cluster_Computing">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#2nd_International_Conference_on_Computer_Research_and_Development,_ICCRD_2010">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<!-- <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc0">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Computers_and_Security"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">139</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-04-2024</dc:issued>
+<dc:description>Malware poses risks by compromising both data integrity and system security. Proactive defense efforts have led to the adoption of malware scoring, allowing analysts to assess the severity and develop countermeasures. These scores indicate the degree of malware maliciousness based on triggered signatures. However, current scoring methods do not precisely depict the true extent of malware's maliciousness. This inaccuracy is attributed to an inadequate assessment of the impact of behaviour corresponding to signatures on both system and network resources. To address this limitation, the paper proposes a novel scoring approach that accurately quantifies the impact of signatures triggered by malware through co-occurrence analysis. The method assesses the ensemble behaviour of signatures across two phases. In the first phase of signature scoring, an impact score quantification algorithm initializes each signature to predefined severity score bands based on the studied severity and frequency. The second phase refines initial scores iteratively, considering mutual information among signatures co-occurring in the malware's execution. Experimental results validate the proposed method's ability to accurately reflect signature maliciousness. This novel scoring method enhances malware analysis platforms in generating more precise scores compared to traditional methods, thereby improving resilience against evolving malware threats in the dynamic cybersecurity landscape.</dc:description>
+<dc:title>MAGIC: Malware behaviour analysis and impact quantification through signature co-occurrence and regression</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">S Rohini,Gowtham Ramesh,Anand Nair R</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc1">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#2022_6th_International_Conference_on_Trends_in_Electronics_and_Informatics,_ICOEI_2022_-_Proceedings"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2022</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">787-794</pages>
+<dc:description>Ransomware is a subset of malware that blocks the access of infected computers by encrypting the user files and locking the screen. To restore the computer's functionality and user files, the malware demands a ransom, which must be paid in the form of cryptocurrency within a stipulated period. The deleterious effects caused by ransomware must be detected and addressed promptly. It is often difficult to perceive the metrics and parameters to look for, particularly when conducting experiments with unfamiliar ransomware variants. Traditionally, analysis carried out on these suspicious files can be categorized as static or dynamic based analysis. Static-based signature analysis is tremendously affected because of its nature of generating hard-coded policies or rules. Attackers often attempt to breach them by employing various techniques like code obfuscation, encryption, packaging, etc. While the dynamic analysis provides more insights into the analyzed files. The proposed work observes the behavioral aspects of ransomware and builds a generic model using machine learning techniques to detect the variants of ransomware families. Such threats must be detected early, i.e., before encryption takes place. Early detection, however, is hampered by a lack of sufficient information in the early stages of an attack, which leads to low detection accuracy and a high rate of false alarms. Currently, available solutions assume that there is complete knowledge of the behavior of such attacks at the time of detection, but that is not the case. The same is not true for early detection which takes place during an attack when the data are not fully accessible. Our paper proposes a novel technique to address these limitations called Augmented Bootstrapping and this method analyses the API calls made by the ransomware along with their timestamps. These timestamps indicate the API call sequences, which in turn help in constructing the N-gram model. The names of API calls are concatenated together to generate the bigram, trigram, 4-gram, and 5-gram models. Further, TF-IDF scores will be calculated for each of these N-grams sequences, and a machine learning model will be trained based on these values. The method analyses API call sequences of each of the active applications in the system and confirms the ransomware attack when it matches a malicious call sequence pattern. Our empirical results confirm that the proposed work could detect ransomware attacks with high accuracy and fewer false predictions.</dc:description>
+<dc:title>Automated Dynamic Detection of Ransomware using Augmented Bootstrapping</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sukul M.,Lakshmanan, S. Aswin,Gowtham R.</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc2">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Networks_and_Systems"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">336</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2022</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">203-216</pages>
+<dc:description>We are proposing a personalized summarization model, which generates an abstractive summary of a random review based on the preference of a specific user. The summary will account the users preference on different aspects present in the review. We put forward a Personalized Key Information Guided Network (PKIGN) that pools both extractive and abstractive methods for summary generation. Specifically, keywords present in the review are extracted which are specific to that user, and these keywords are used as key information representation to guide the process of generating summaries. Additionally, Pointer-Guide mechanism is employed for obtaining long-term value for decoding. We evaluate our model on a new Trip-Advisor hotel review dataset, comprising of 140,874 reviews from 41,600 users. Combining the results from both human evaluation and quantitative analysis, it is seen that our model achieves better performance than existing models on personalized review summarization in case of hotel reviews.</dc:description>
+<dc:title>Personalized Abstract Review Summarization Using Personalized Key Information-Guided Network</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dharan Nidhin S,Gowtham R.</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc3">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Networks_and_Systems"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">336</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2022</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">153-167</pages>
+<dc:description>The growth of malware attacks has been phenomenal in the recent past. The COVID-19 pandemic has contributed to an increase in the dependence of a larger than usual workforce on digital technology. This has forced the anti-malware communities to build better software to mitigate malware attacks by detecting it before they wreak havoc. The key part of protecting a system from a malware attack is to identify whether a given file/software is malicious or not. Ransomware attacks are time-sensitive as they must be stopped before the attack manifests as the damage will be irreversible once the attack reaches a certain stage. Dynamic analysis employs a great many methods to decipher the way ransomware files behave when given a free rein. But, there still exists a risk of exposing the system to malicious code while doing that. Ransomware that can sense the analysis environment will most certainly elude the methods used in dynamic analysis. We propose a static analysis method along with machine learning for classifying the ransomware using opcodes extracted by disassemblers. By selecting the most appropriate feature vectors through the tf-idf feature selection method and tuning the parameters that better represent each class, we can increase the efficiency of the ransomware classification model. The ensemble learning-based model implemented on top of N-gram sequence of static opcode data was found to improve the performance significantly in comparison to RF, SVN, LR, and GBDT models when tested against a dataset consisting of live encrypting ransomware samples that had evasive technique to dodge dynamic malware analysis.</dc:description>
+<dc:title>Ensemble Model Ransomware Classification: A Static Analysis-based Approach</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Johnson Shanoop,Gowtham R.,Nair Anand R.</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc4">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Data_and_Knowledge_Engineering"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">135</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-09-2021</dc:issued>
+<dc:description>The Internet of Things (IoT) is one of the rapidly growing technologies with the aim of establishing communication among objects, people, and processes. This rapidly growing technology faces a lot of challenges that hinder its wider adoption, specifically in developing applications that involve heterogeneous domains. Currently, developing such interoperable applications require substantial efforts by the developers to hard code the requirements to ensure the correctness of transferring knowledge. The efforts can be significantly reduced by developing an interoperable platform that ensures seamless communication between heterogeneous IoT devices. W3C Web of Things (WoT) is a significant step towards enabling interoperability between IoT devices by integrating the existing Web ecosystem with Things. WoT provides a unified interface over a suitable network protocol facilitating interactions between different IoT protocols. WoT Thing Descriptions (TD) enrich interoperability providing both human and machine readable metadata about a Thing. However, the WoT still falls short in providing semantic interoperability due to insufficient standard vocabularies which can describe different IoT application domains. In this paper, we propose a semantic similarity-based approach to automatically identify and extract the most common concepts from sixteen popular ontologies belonging to smart home and smart building domains. The proposed method helps the developers and researchers to develop a domain ontology with reduced effort. The extracted concepts are evaluated by the domain experts and are found to be sufficient in describing the smart home and smart building domains.</dc:description>
+<dc:title>Knowledge extraction using semantic similarity of concepts from Web of Things knowledge bases</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Muppavarapu Vamsee, Gowtham Ramesh,Gyrard  Amelie,Noura Mahda</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc5">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#International_Journal_of_Web-Based_Learning_and_Teaching_Technologies"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-07-2021</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-Nov</pages>
+<dc:description>The intelligent personal assistant system is designed to support the individual researchers to enhance their quality of the research through the natural language interface. Specifically, this system automatically provides intrinsic details about the importance of the topic of discussion using the timeline analysis. The results generated by the system help the researchers to understand the preference of the global researchers in the specific research field. This system primarily identifies the core topic of the discussion from the user's presentation. Further, the importance of the topic is calculated based on the research articles published over three decades in the related field. The experimental results confirm that the proposed method accurately identifies whether the research topic the user presented is HOT.</dc:description>
+<dc:title>A cognitive personal assistant system to enhance the individual-centric research capabilities</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham R.,Sanjay S. P.,Shandilya Shishir Kumar,Sountharrajan S.</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc6">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Decision_Support_Systems"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">138</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-11-2020</dc:issued>
+<dc:description>Ransomware is a type of malware that affects the victim data by modifying, deleting, or blocking their access. In recent years, ransomware attacks have resulted in critical data and financial losses to individuals and industries. These disruptions force the need for developing effective anti-ransomware methods in the research community. However, most of the existing techniques are designed to detect a specific ransomware variant instead of providing a generic solution mainly because of the obfuscation techniques used by ransomware or the use of static analysis methods. In this context, this paper proposes a novel ransomware-detection technique that identifies ransomware attacks by evaluating the current state of a computer system with knowledge of a ransomware attack. The finite-state machine model is used to synthesise the knowledge of the ransomware attack with respect to the victim machine. The proposed method monitors the changes happening in the computer system in terms of utilisation, persistence, and lateral movement of its resources to detect ransomware attacks. The experimental results demonstrate that the proposed method can accurately detect attacks from different ransomware variants with significantly few false predictions.</dc:description>
+<dc:title>Automated dynamic approach for detecting ransomware using finite-state machine</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh,Menen Anjali</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc7">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Journal_of_Intelligent_and_Fuzzy_Systems"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2020</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">6291-6298</pages>
+<dc:description>Human-Elephant Conflict (HEC) and its mitigation have always been a serious conservation issue in India. It occurs mainly due to the encroachment of forests by humans as part of societal development. Consequently, these human settlements are highly affected by the intrusion of wild elephants as they cause extensive crop-raiding, injuries and even death in many cases. HEC is a growing problem in rural areas of India which shares a border with forests and other elephant habitats. Based on the studies, it is very explicit that HEC is an important conservation issue which affects the peaceful co-existence of both humans and elephants near the forest areas. The desirable solution for this problem would be to facilitate co-existence among humans and elephants, but this often fails because of technical difficulties. Hence, this paper presents an end-to-end technological solution to facilitate smoother coexistence of humans and elephants. The proposed work deploys a live video surveillance system along with deep learning strategies to effectively detect the presence of elephants. From the numerical analysis, it is revealed that the post-training accuracy of the deep learning model used in the proposed approach is evaluated at 98.7% and outperforms an an out-of-the-box image detector. The layered approach used in the proposed work improves resource management which is a major bottleneck in real-time deployment scenarios.</dc:description>
+<dc:title>A layered approach to detect elephants in live surveillance video streams using convolution neural networks</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ravikumar Sourav,Vinod Dayanand,Gowtham Ramesh,Pulari Sini Raj,Mathi Senthilkumar</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc8">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#2019_International_Conference_on_Intelligent_Computing_and_Control_Systems,_ICCS_2019"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2020</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1497-1501</pages>
+<dc:description>Building information model (BIM) is a new emergence in the field of Architecture, Engineering and Construction (AEC) industry, which facilitates detailed digital representation of a building. The BIM archetype describes the details of a building in the Industry Foundation Class (IFC), which is a platform-agnostic, open data model developed by buildingSMART. The BIM data model embeds interoperability and querying facility among its principal traits in support of the AEC industry. The building information is also required by domains outside the AEC industry, to develop a wide variety of applications such as smart building and indoor navigation systems. In such cases, the IFC data model falls short in supporting interaction with applications of external domains other than AEC. The proposed work is aimed to perform a study on various efforts undertaken in the integration of BIM model with external domain querying and reasoning systems, to retrieve details from underlying building models.</dc:description>
+<dc:title>AI based semantic extensibility and querying techniques for building information model</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Raghavi V.,Gowtham R.</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc9">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_on_Data_Engineering_and_Communications_Technologies"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-05-2019</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-Oct</pages>
+<dc:description>The past two decades have witnessed the significant proliferation of technologies, which has laid a strong foundation for the scientific research in different fields. However, the changes across every field have also created new challenges related to the management of large chunks of data present in the process of converting, storing, searching and providing the user with relevant data. Extracting and transforming the data from one form to another remains as an important task in the current era. It becomes challenging when we focus on the particular extraction instances. Finding the proper research paper from the huge number of papers that includes navigation through the data is not an easy task. It includes huge amount of time search to provide the user with the most appropriate scientific paper of search. This paper concentrates on the extraction of problem statement from one research paper and will be further used to find the related papers. The use of phrases makes the search to considerably reduce the number of search across the Internet and at the same time, it yields a high performance.</dc:description>
+<dc:title>Summarization of Research Publications Using Automatic Extraction</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Alampalli Ramu Nikhil,Bandarupalli Mohana Sai,Nekkanti Manoj Sri Surya, Gowtham Ramesh</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc10">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#International_Journal_of_Recent_Technology_and_Engineering"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2019</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">28-31</pages>
+<dc:description>Cyber security protects the system from unauthorized access and destruction of data. The intention is to provide security to the system by blocking attackers. Malware or malicious software is any kind of program which is developed with the aim of doing harm to victims data. Viruses, worms, Trojan horses, Ransomware, and spyware are different types of malware. When malicious software enters into the system, it will encrypt the user data, deletes or modifies the data. This type of software also used to steal the user data. Ransomware is one of the types of malware which was developed with the intention of getting money from the victims. When Ransomware starts executing in our system, it will start encrypting, deleting and modifying files. The user will get decryption key only after paying the claimed money. Many have found some solutions for detecting some specific Ransomware. The existing technique includes Static based technique which uses signature analysis which can only detect known Ransomware since it compares the extracted code snippet of the target executable with the database of known malware samples. The existing technique is based on the known input and known output and can only detect known Ransomware samples. In this paper we have proposed an efficient Ransomware detection system based on the analysis of behavior with the help of machine learning technique. In the proposed technique, we analyzed the possible behavior of Ransomware based on the changes to users files, addition of registry key, stopping the active processes. Based on this behavior, the decision is made using Machine learning technique.</dc:description>
+<dc:title>An efficient ransomware detection system</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Menen Anjalee,Gowtham R.</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc11">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Materials_Today:_Proceedings"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-02-2019</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">23816-23823</pages>
+<dc:description>The need for standard construction materials is increasing each day due to the pressure faced by construction sectors for achieving an enhanced growth and sustainable development in construction. These have made the developers go for different materials that can be used as an alternate material in construction. In the present work, natural fibers namely coir and sisal fiber are chosen to improve the properties of the concrete. Plain concrete properties are used as a reference to evaluate the effectiveness of this natural fiber reinforced concrete. The objective of this project is to determine the optimum level of coir fiber content for effective enhancement in ductile properties of concrete and on the usage of sisal fiber in increasing the strength properties of concrete.</dc:description>
+<dc:title>Enhancement of properties of concrete using natural fibers</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Krishna N. Kaarthik,Prasanth M.,Gowtham R.,Karthic S.,Mini K. M.</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc12">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Electronic_Library"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2018</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Feb-15</pages>
+<dc:description>Purpose: Ontology of a domain mainly consists of a set of concepts and their semantic relations. It is typically constructed and maintained by using ontology editors with substantial human intervention. It is desirable to perform the task automatically, which has led to the development of ontology learning techniques. One of the main challenges of ontology learning from the text is to identify key concepts from the documents. A wide range of techniques for key concept extraction have been proposed but are having the limitations of low accuracy, poor performance, not so flexible and applicability to a specific domain. The propose of this study is to explore a new method to extract key concepts and to apply them to literature in the nuclear domain. Design/methodology/approach: In this article, a novel method for key concept extraction is proposed and applied to the documents from the nuclear domain. A hybrid approach was used, which includes a combination of domain, syntactic name entity knowledge and statistical based methods. The performance of the developed method has been evaluated from the data obtained using two out of three voting logic from three domain experts by using 120 documents retrieved from SCOPUS database. Findings: The work reported pertains to extracting concepts from the set of selected documents and aids the search for documents relating to given concepts. The results of a case study indicated that the method developed has demonstrated better metrics than Text2Onto and CFinder. The method described has the capability of extracting valid key concepts from a set of candidates with long phrases. Research limitations/implications: The present study is restricted to literature coming out in the English language and applied to the documents from nuclear domain. It has the potential to extend to other domains also. Practical implications: The work carried out in the current study has the potential of leading to updating International Nuclear Information System thesaurus for ontology in the nuclear domain. This can lead to efficient search methods. Originality/value: This work is the first attempt to automatically extract key concepts from the nuclear documents. The proposed approach will address and fix the most of the problems that are existed in the current methods and thereby increase the performance.</dc:description>    
+<dc:title>Method for automatic key concepts extraction: Application to documents in the domain of nuclear reactors</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Desul Sudarsana,Madurai Meenachi N.,Venkatesh Thejas,Gunta Vijitha,Gowtham R.,Sai Baba Magapu</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc13">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#2017_International_Conference_on_Advances_in_Computing,_Communications_and_Informatics,_ICACCI_2017"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2017-January</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2018</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2284-2288</pages>
+<dc:description>Human-elephant conflict is a frontline conservation issue in the world. The loss and fragmentation of elephant's habitat owing to the increased human encroachment leads to a notable conservation issue. It raises the need for a non-invasive and efficient solution for the mitigation of human-elephant conflicts. Consequently, deploying a vision based surveillance method in the real time environment can prove to be significantly useful to provide the warnings well in advance thereby reducing the human elephant conflict. In this paper, a method for the identification of elephant as an object using image processing is proposed. The method dynamically learns from the trained images with different backgrounds, lighting conditions. Further, it classifies the input image based on the features of color and texture. The outcomes demonstrate that the proposed method effectively deals with the detection of elephants in near and far distances, cluttered and occluded environment.</dc:description>
+<dc:title>An automated vision-based method to detect elephants for mitigation of human-elephant conflicts</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"> Gowtham Ramesh,Mathi Senthilkumar,Pulari Sini Raj,Krishnamoorthy Vidya</amrita:authors>       
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc14">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Computational_Vision_and_Biomechanics"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2018</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">437-446</pages>
+<dc:description>Personalization is an emerging topic in the field of Research paper recommender systems and academic research. It is a technique to creative and efficient user profiles to achieve improved recommendations. Our work proposes a new user model to understand user behavior for personalization. This model initially extracts keywords based on the online behaviour of the user. The subsequent steps include concept extraction and user profile ontology construction to derive inferences and define relationships. The suggested model clearly depicts hierarchical ordering of the users long-term and current research interests. Furthermore, the adoption of our model contributes to improvement of recommendations.</dc:description>
+<dc:title>Personalized research paper recommender system</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sripadh Thota,Gowtham Ramesh</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc15">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Computational_Vision_and_Biomechanics"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">02-12-2017</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">55-67</pages>
+<dc:description>Recommender systems have changed its purview from prediction accuracy oriented to finding more relevant and useful recommendations to user. Usefulness of items are different in different applications. This paper summarizes the works that have been done in this direction. Personalization, context awareness, multiple objectives of recommendations and evaluation metrics are reviewed in this paper.</dc:description>
+<dc:title>Comprehensive study on usage of multi objectives in recommender systems</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sruthi M.,Pulari Sini Raj,Gowtham Ramesh</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc16">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Behaviour_and_Information_Technology"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">30-11-2017</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1244-1260</pages>
+<dc:description>Phishing is a fraudulent scheme to steal a users personal and confidential information by masking as a trustworthy entity in the electronic commerce. Phishers lure online users to visit their fake webpages and capture the users sensitive financial information. The current anti-phishing technique focuses on determining the legitimacy of the webpages that the user visits, and it alerts users with a phishing label when a webpage is found to have suspicious activity. Most of the times, however, these warnings are ignored by the users as there is no significant information present in the alerts except for the phishing label. The method proposed in this paper addresses the aforementioned lacunae by generating a coherent and complete explanation in the natural language text for the anti-phishing systems decision. The explanation includes the phishing label along with information to establish why such a decision has been taken. This would, in turn, contribute to the users enhanced understanding of the threat and also strengthens the users trust in the system. It is quite evident from the pilot evaluation, which involved 50 users, that the proposed methodology significantly improves the users understanding of the phishing label and strengthens their trust in the system.</dc:description>
+<dc:title>Intelligent explanation generation system for phishing webpages by employing an inference system</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ramesh Gowtham,Selvakumar Kirubakara,Venugopal Archana</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc17">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Journal_of_Information_Security_and_Applications"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-08-2017</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">75-84</pages>
+<dc:description>Phishing is the act of stealing personal information from the online users by impersonating as a statutory source in the cyberspace. Phishers often bait online users to visit their forged webpages to acquire users sensitive information. Most of the anti-phishing techniques today, endeavor to identify the legitimacy of the webpages the user visits and warn them with a phishing label when the webpage is a phish. But, these warnings generated by the anti-phishing tools are generic and does not provide any assistance for the users to safely navigate to the legitimate webpages. Any anti-phishing technique will be incomplete and incompetent without having a victimized domain identification in place. The method proposed in this paper addresses this lacuna by automatically identifying the victimized domain (target domain) of every successfully distinguished phishing webpage. This method initially identifies the possible target domains of the webpage by analyzing the feign relationships which exist between the webpage and its associated domains through the in-degree link associations. Further, a novel Target Validation (TVD) algorithm is used to ensure the correctness of the identified target domain which in turn helps in reducing the false target predictions of the system. The legitimacy of the webpage is further confirmed using the identified target domain. The experiment results show that this method is efficient in protecting users from the online identity attacks and also in identifying victimized domain with over 99% accuracy.</dc:description>
+<dc:title>Identification of phishing webpages and its target domains by analyzing the feign relationship</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ramesh Gowtham,Gupta Jithendranath,Gamya P. G.</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc18">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#International_Journal_of_Applied_Engineering_Research"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2015</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">16953-16960</pages>
+<dc:description>Ontology verbalization is a process of converting the logical content of ontologies represented in the Web Ontology Language (OWL) into human understandable natural languages such as English. But, because of the ambiguous and complex nature of the natural languages, it is not directly suitable for verbalization. Controlled Natural Languages (CNLs) are derived from natural languages by applying restrictions and it can be further used for ontology verbalization and authoring. It helps the non-logicians to easily access the OWL ontologies. There are various controlled natural languages that can be used for both ontology authoring and verbalization. Each of the CNL has its own advantages and disadvantages. They overlap in some of the features, while differs widely in some other. The common goal of all the controlled natural languages is to make the OWL statements and the ontologies easily understandable for the users with little or no formal training. This paper focuses on comparing four predominantly used controlled natural languages such as Attempto Controlled English (ACE), Rabbit, Sydney OWL Syntax (SOS) and OWL Simplified English (OSE) with respect to simplicity, clearness, naturalness, and expressivity.</dc:description>
+<dc:title>A study on verbalization of OWL axioms using controlled natural language</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Venugopal Archana, Gowtham Ramesh</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc19">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Cluster_Computing"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-02-2014</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1051-1068</pages>
+<dc:description>Phishing is web based criminal activity of making innocent online users to reveal sensitive information into fake web sites. Such fake web sites lead to fraudulent charges against individuals and corporations. Phishers have a lot of methods to design and host phished web pages, so in reality there cannot be a single solution that can help us combat phishing. As technology advances, the phishing techniques being used are also getting advanced and hence it demands the anti-phishing techniques also to be upgraded and the new techniques are to be included along with the existing methods. But most of the anti-phishing techniques today do not satisfy these criteria. In this paper, we propose service oriented three-layer architecture model for detecting and identifying phishing web sites as it overcomes the shortcomings of existing anti-phishing solutions. This model enables us to separate the user interface layer from the anti-phishing components layer. This is done through web service middleware layer, which provides us with the freedom of building our own anti-phishing components layer in an efficient and flexible way, independent of other layers. Anti-phishing components layer provides a set of reusable components to convert webpage into feature vectors using finest heuristic methods and external repositories of information. The feature vectors act as an input to trained support vector machine classifier to generate phishing label which determines whether a webpage is legitimate or a phishing page. This when experimented, displayed the significance and importance of three-layered architecture model along with combination of heuristics in detection of phishing webpage. This results in high accuracy of 99 % with less than 1 % of false positive rate. © 2013 Springer Science+Business Media New York.</dc:description>
+<dc:title>PhishTackle-a web services architecture for anti-phishing</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham R.,Krishnamurthi Ilango</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc20">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Decision_Support_Systems"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2014</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dec-22</pages>
+<dc:description>Phishing is a fraudulent act to acquire sensitive information from unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying Target Identification (TID) algorithm on this set, we zero-in the target domain. We then perform third-party DNS lookup of the suspicious domain and the target domain and on comparison we identify the legitimacy of the suspicious page. © 2014 Elsevier B.V.</dc:description>
+<dc:title>An efficacious method for detecting phishing webpages through target domain identification</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh,Krishnamurthi Ilango,Kumar K. Sampath Sree</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc21">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Computers_and_Security"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2014</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">23-37</pages>
+<dc:description>Phishing is a web-based criminal act. Phishing sites lure sensitive information from naive online users by camouflaging themselves as trustworthy entities. Phishing is considered an annoying threat in the field of electronic commerce. Due to the short lifespan of phishing webpages and the rapid advancement of phishing techniques, maintaining blacklists, white-lists or employing solely heuristics-based approaches are not particularly effective. The impact of phishing can be largely mitigated by adopting a suitable combination of all these techniques. In this study, the characteristics of legitimate and phishing webpages were investigated in depth, and based on this analysis, we proposed heuristics to extract 15 features from such webpages. These heuristic results were fed as an input to a trained machine learning algorithm to detect phishing sites. Before applying heuristics to the webpages, we used two preliminary screening modules in this system. The first module, the preapproved site identifier, checks webpages against a private white-list maintained by the user, and the second module, the Login Form Finder, classifies webpages as legitimate when there are no login forms present. These modules help to reduce superfluous computation in the system and in addition reducing the rate of false positives without compromising on the false negatives. By using all of these modules, we are able to classify webpages with 99.8% precision and a 0.4% of false positive rate. The experimental results indicate that this method is efficient for protecting users from online identity attacks. © 2013 Elsevier Ltd. All rights reserved.</dc:description>
+<dc:title>A comprehensive and efficacious architecture for detecting phishing webpages</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh.,Krishnamurthi Ilango</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc22">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+
+<dc:publisher rdf:resource="http://www.amrita.org/terms#2nd_International_Conference_on_Computer_Research_and_Development,_ICCRD_2010"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">09-08-2010</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">373-378</pages>
+<dc:description>Enterprise Resource Planning (ERP) systems represent a huge market in the commercial arena. Products from suppliers such as SAP, Oracle and more recently, Microsoft, dominate the software market. Testing in these projects is a significant effort but is hardly supported by methods and tools other than those provided by the suppliers themselves. Experience shows that testing in these projects is critical, but often neglected. Recent 'lessons learned'work by the Paul Gerrard indicates that a benefit, risk- and coverage-based test approach could significantly reduce the risk of failures. It is evidence that modified condition/decision coverage (MC/DC) is an effective verification method and can help to detect safety faults despite of its expensive cost. In regression testing, it is quite costly to return all of test cases in test suite because new test cases are added to test suite as the software evolves. Therefore, it is necessary to reduce the test suite to improve test efficiency and save test cost. Many existing test-suite reduction techniques are not effective to reduce MC/DC test suite. This paper proposes a new test-suite reduction technique for MC/DC: a bi-objective model that considers both the coverage degree of test case for test requirements and the capability of test cases to reveal error. Our experiment results show that the technique both reduces the size of test suite and better ensures the effectiveness of test suite to reveal error. © 2010 IEEE.</dc:description>
+<dc:title>Study of ERP test-suite reduction based on modified condition/decision coverage</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Prabhu J.,Malmurugan N.,Gunasekaran G.,Gowtham Ramesh</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</amrita:totalCitations>
+</owl:NamedIndividual> -->
