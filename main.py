@@ -26,5 +26,5 @@ for i in range(0, len(df)):
         print(f'<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">{df["Pages"][i]}</pages>')
     print(f'<dc:description>{df["description"][i]}</dc:description>')
     print(f'<dc:title>{df["title"][i]}</dc:title>')
-    # print(f'<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">{}</amrita:authors>')
+    print(f'<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">{df["authors"][i]}</amrita:authors>')
     print(f'<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">{df["citedby_count"][i]}</amrita:totalCitations>')
