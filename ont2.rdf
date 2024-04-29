@@ -2633,89 +2633,8 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
     <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#North-Holland">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:NamedIndividual>
-    
 
-
-    <!-- http://www.amrita.org/terms#Test1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test1">
-        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
-        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
-        <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
-        <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</basic:volume>
-        <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2015</dc:issued>
-        <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-54</pages>
-        <dc:description>Phishing is a fraudulent act t information from unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying …</dc:description>
-        <dc:title>An efficacious method for d through target domain identification</dc:title>
-        <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh, Kupesh</amrita:authors>
-        <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</amrita:totalCitations>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.amrita.org/terms#Test2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test2">
-        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
-        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
-        <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
-        <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</basic:volume>
-        <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2005</dc:issued>
-        <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-40</pages>
-        <dc:description>Phishing is a fraudulent act t unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying …</dc:description>
-        <dc:title>An efficacious method target domain identification</dc:title>
-        <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"> Kupesh</amrita:authors>
-        <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</amrita:totalCitations>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.amrita.org/terms#TestDocument -->
-
-    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#TestDocument">
-        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
-        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-        <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
-        <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</basic:volume>
-        <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2014</dc:issued>
-        <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-50</pages>
-        <dc:description>Phishing is a fraudulent act to acquire sensitive information from unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying …</dc:description>
-        <dc:title>An efficacious method for detecting phishing webpages through target domain identification</dc:title>
-        <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh, Sanjay, Kupesh</amrita:authors>
-        <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</amrita:totalCitations>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.amrita.org/terms#journal -->
-
-    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#journal">
-        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
-        <skos:scopeNote xml:lang="en">Used to describe a bibliographic resource.</skos:scopeNote>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/dc/terms/title">
-        <skos:scopeNote xml:lang="en">Used to describe the title of a bibliographic resource</skos:scopeNote>
-    </rdf:Description>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
-
-<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Computers_and_Security">
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Computers_and_Security">
             <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         </owl:NamedIndividual>
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#2022_6th_International_Conference_on_Trends_in_Electronics_and_Informatics,_ICOEI_2022_-_Proceedings">
@@ -2772,10 +2691,62 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#2nd_International_Conference_on_Computer_Research_and_Development,_ICCRD_2010">
             <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         </owl:NamedIndividual>
-<!-- <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc0">
+
+    <!-- http://www.amrita.org/terms#Test1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test1">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+        <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
+        <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</basic:volume>
+        <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2015</dc:issued>
+        <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-54</pages>
+        <dc:description>Phishing is a fraudulent act t information from unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying …</dc:description>
+        <dc:title>An efficacious method for d through target domain identification</dc:title>
+        <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh, Kupesh</amrita:authors>
+        <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</amrita:totalCitations>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.amrita.org/terms#Test2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test2">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+        <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
+        <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</basic:volume>
+        <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2005</dc:issued>
+        <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-40</pages>
+        <dc:description>Phishing is a fraudulent act t unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying …</dc:description>
+        <dc:title>An efficacious method target domain identification</dc:title>
+        <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"> Kupesh</amrita:authors>
+        <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</amrita:totalCitations>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.amrita.org/terms#TestDocument -->
+
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#TestDocument">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+        <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
+        <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</basic:volume>
+        <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2014</dc:issued>
+        <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-50</pages>
+        <dc:description>Phishing is a fraudulent act to acquire sensitive information from unsuspecting users by masking as a trustworthy entity in an electronic commerce. Several mechanisms such as spoofed e-mails, DNS spoofing and chat rooms which contain links to phishing websites are used to trick the victims. Though there are many existing anti-phishing solutions, phishers continue to lure the victims. In this paper, we present a novel approach that not only overcomes many of the difficulties in detecting phishing websites but also identifies the phishing target that is being mimicked. We have proposed an anti-phishing technique that groups the domains from hyperlinks having direct or indirect association with the given suspicious webpage. The domains gathered from the directly associated webpages are compared with the domains gathered from the indirectly associated webpages to arrive at a target domain set. On applying …</dc:description>
+        <dc:title>An efficacious method for detecting phishing webpages through target domain identification</dc:title>
+        <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh, Sanjay, Kupesh</amrita:authors>
+        <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</amrita:totalCitations>
+    </owl:NamedIndividual>
+    
+
+<!-- 1234567890987654321234567890987654323456789098765432345678987654323456789 -->
+
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc0">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Computers_and_Security"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">139</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-04-2024</dc:issued>
@@ -2787,7 +2758,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc1">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#2022_6th_International_Conference_on_Trends_in_Electronics_and_Informatics,_ICOEI_2022_-_Proceedings"/>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2022</dc:issued>
 <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">787-794</pages>
@@ -2799,7 +2769,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc2">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Networks_and_Systems"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">336</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2022</dc:issued>
@@ -2812,7 +2781,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc3">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Networks_and_Systems"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">336</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2022</dc:issued>
@@ -2825,7 +2793,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc4">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Data_and_Knowledge_Engineering"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">135</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-09-2021</dc:issued>
@@ -2837,7 +2804,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc5">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#International_Journal_of_Web-Based_Learning_and_Teaching_Technologies"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-07-2021</dc:issued>
@@ -2850,7 +2816,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc6">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Decision_Support_Systems"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">138</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-11-2020</dc:issued>
@@ -2862,7 +2827,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc7">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Journal_of_Intelligent_and_Fuzzy_Systems"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2020</dc:issued>
@@ -2875,7 +2839,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc8">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#2019_International_Conference_on_Intelligent_Computing_and_Control_Systems,_ICCS_2019"/>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2020</dc:issued>
 <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1497-1501</pages>
@@ -2887,7 +2850,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc9">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_on_Data_Engineering_and_Communications_Technologies"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">15-05-2019</dc:issued>
@@ -2900,7 +2862,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc10">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#International_Journal_of_Recent_Technology_and_Engineering"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-05-2019</dc:issued>
@@ -2925,7 +2886,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc12">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Electronic_Library"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2018</dc:issued>
@@ -2938,7 +2898,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc13">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#2017_International_Conference_on_Advances_in_Computing,_Communications_and_Informatics,_ICACCI_2017"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2017-January</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2018</dc:issued>
@@ -2963,7 +2922,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc15">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Computational_Vision_and_Biomechanics"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">02-12-2017</dc:issued>
@@ -2976,7 +2934,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc16">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Behaviour_and_Information_Technology"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">30-11-2017</dc:issued>
@@ -2989,7 +2946,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc17">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Journal_of_Information_Security_and_Applications"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-08-2017</dc:issued>
@@ -3002,7 +2958,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc18">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#International_Journal_of_Applied_Engineering_Research"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2015</dc:issued>
@@ -3015,7 +2970,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc19">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Cluster_Computing"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-02-2014</dc:issued>
@@ -3028,7 +2982,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc20">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Decision_Support_Systems"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2014</dc:issued>
@@ -3041,7 +2994,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc21">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#Computers_and_Security"/>
 <basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</basic:volume>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2014</dc:issued>
@@ -3054,7 +3006,6 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc22">
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
 <rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
-
 <dc:publisher rdf:resource="http://www.amrita.org/terms#2nd_International_Conference_on_Computer_Research_and_Development,_ICCRD_2010"/>
 <dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">09-08-2010</dc:issued>
 <pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">373-378</pages>
@@ -3062,4 +3013,37 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <dc:title>Study of ERP test-suite reduction based on modified condition/decision coverage</dc:title>
 <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Prabhu J.,Malmurugan N.,Gunasekaran G.,Gowtham Ramesh</amrita:authors>
 <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</amrita:totalCitations>
+</owl:NamedIndividual>
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+        <skos:scopeNote xml:lang="en">Used to describe a bibliographic resource.</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+        <skos:scopeNote xml:lang="en">Used to describe the title of a bibliographic resource</skos:scopeNote>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
+<!-- <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc0">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Computers_and_Security"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">139</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-04-2024</dc:issued>
+<dc:description>Malware poses risks by compromising both data integrity and system security. Proactive defense efforts have led to the adoption of malware scoring, allowing analysts to assess the severity and develop countermeasures. These scores indicate the degree of malware maliciousness based on triggered signatures. However, current scoring methods do not precisely depict the true extent of malware's maliciousness. This inaccuracy is attributed to an inadequate assessment of the impact of behaviour corresponding to signatures on both system and network resources. To address this limitation, the paper proposes a novel scoring approach that accurately quantifies the impact of signatures triggered by malware through co-occurrence analysis. The method assesses the ensemble behaviour of signatures across two phases. In the first phase of signature scoring, an impact score quantification algorithm initializes each signature to predefined severity score bands based on the studied severity and frequency. The second phase refines initial scores iteratively, considering mutual information among signatures co-occurring in the malware's execution. Experimental results validate the proposed method's ability to accurately reflect signature maliciousness. This novel scoring method enhances malware analysis platforms in generating more precise scores compared to traditional methods, thereby improving resilience against evolving malware threats in the dynamic cybersecurity landscape.</dc:description>
+<dc:title>MAGIC: Malware behaviour analysis and impact quantification through signature co-occurrence and regression</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">S Rohini,Gowtham Ramesh,Anand Nair R</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</amrita:totalCitations>
 </owl:NamedIndividual> -->
