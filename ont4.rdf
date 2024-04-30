@@ -2628,11 +2628,7 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
     
 
 
-    <!-- http://www.amrita.org/terms#North-Holland -->
-
-    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#North-Holland">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:NamedIndividual>
+    <!-- Object Properties Individual Publisher Name -->
 
     <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Computers_and_Security">
             <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
