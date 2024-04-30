@@ -2638,7 +2638,7 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 
     <!-- http://www.amrita.org/terms#Test1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test1">
+    <!-- <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test1">
         <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
         <rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
         <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
@@ -2649,13 +2649,13 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
         <dc:title>An efficacious method for d through target domain identification</dc:title>
         <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gowtham Ramesh, Kupesh</amrita:authors>
         <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</amrita:totalCitations>
-    </owl:NamedIndividual>
+    </owl:NamedIndividual> -->
     
 
 
     <!-- http://www.amrita.org/terms#Test2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test2">
+    <!-- <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test2">
         <rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
         <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
         <dc:publisher rdf:resource="http://www.amrita.org/terms#North-Holland"/>
@@ -2666,7 +2666,7 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
         <dc:title>An efficacious method target domain identification</dc:title>
         <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"> Kupesh</amrita:authors>
         <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</amrita:totalCitations>
-    </owl:NamedIndividual>
+    </owl:NamedIndividual> -->
     
 
 
