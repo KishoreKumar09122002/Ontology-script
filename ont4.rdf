@@ -2728,6 +2728,67 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
             <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         </owl:NamedIndividual>
 
+    <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Journal_of_Intelligent_Information_Systems">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Communications_in_Computer_and_Information_Science">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Microchimica_Acta">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Journal_of_Ambient_Intelligence_and_Humanized_Computing">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Lecture_Notes_in_Computer_Science_(including_subseries_Lecture_Notes_in_Artificial_Intelligence_and_Lecture_Notes_in_Bioinformatics)">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#International_Journal_of_Wireless_Information_Networks">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Geospatial_Infrastructure,_Applications_and_Technologies:_India_Case_Studies">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#ICINCO_2016_-_13th_International_Conference_on_Informatics_in_Control,_Automation_and_Robotics,_Doctoral_Consortium">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#2015_International_Conference_on_Advances_in_Computing,_Communications_and_Informatics,_ICACCI_2015">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#ACM_International_Conference_Proceeding_Series">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#2015_IEEE_10th_International_Conference_on_Intelligent_Sensors,_Sensor_Networks_and_Information_Processing,_ISSNIP_2015">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#2014_Ubiquitous_Positioning_Indoor_Navigation_and_Location_Based_Service,_UPINLBS_2014_-_Conference_Proceedings">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Procedia_Computer_Science">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Proceedings_-_2012_IEEE_International_Conference_on_Technology_Enhanced_Education,_ICTEE_2012">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Proceedings_of_the_1st_Amrita_ACM-W_Celebration_of_Women_in_Computing_in_India,_A2CWiC'10">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Advances_in_Database_Technology_-_EDBT_2010_-_13th_International_Conference_on_Extending_Database_Technology,_Proceedings">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Proceedings_of_the_International_Conference_on_Autonomous_Agents">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#ACM_Multimedia_2004_-_proceedings_of_the_12th_ACM_International_Conference_on_Multimedia">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Proceedings_of_SPIE_-_The_International_Society_for_Optical_Engineering">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Proceedings_ITCC_2003,_International_Conference_on_Information_Technology:_Computers_and_Communications">      
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        </owl:NamedIndividual>
+
     <!-- http://www.amrita.org/terms#Test1 -->
 
     <owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Test1">
@@ -3348,6 +3409,301 @@ Even if this link is not done in neither the FOAF nor the DCTERMS ontologies thi
 <dc:title>Classification of lung glandular cells for early detection of cancer using multiple color spaces and scale space catastrophe features</dc:title>
 <amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Venkataraman D,Suganthi J,Sajith Kecheril S,Sujathan K</amrita:authors>
 <amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc49">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Journal_of_Intelligent_Information_Systems"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-10-2020</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">207-231</pages>
+<dc:description>Diversified Query Expansion aims to present the user with a diverse list of query expansions so as to better communicate their intent to the retrieval system. Current diversified expansion techniques either make use of external knowledge sources to explicitly model the various aspects and their relationships underlying the user query or implicitly model query aspects. However these techniques assume query aspects to be independent of each other. We propose a unified framework that produces diversified query expansions in a completely implicit manner while also considering the relationships between query aspects. In particular, the framework identifies query aspects and their relationships by making use of the semantic properties of context phrases that occur within the top-ranked retrieved documents for the supplied user query, and maps them onto a Mutating Markov Chain model to generate a diverse ordering of query aspects. We test our framework against a set of ambiguous and faceted queries used in the NTCIR-12 IMine-2 Task and through an extensive empirical analysis, we show that our framework consistently outperforms existing implicit diversified query expansion algorithms. The utility of our algorithm truly comes up in the second set of experiments where we generate diversified query expansions for a retrieval engine indexing documents from specific scientific domains. Even in such a niche scenario our algorithm consistently provides robust results and performs better than other implicit approaches.</dc:description>
+<dc:title>An implicit aspect modelling framework for diversity focused query expansion</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dev Rahul E,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc50">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Communications_in_Computer_and_Information_Science"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1287</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2020</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">503-515</pages>
+<dc:description>Recently, games like Pac-Man have been hotbeds for neuroevolution research and NEAT has emerged as one of the leading techniques in the game playing domain[14]. In the context of the snake game, the goal of this paper is to enhance neuroevolution strategies with better fitness functions for effective goal finding. We develop greedy and non-greedy fitness functions, and demonstrate the effectiveness of these functions in both environments with and without dynamic obstacles. We then present an alternate implementation using the NEAT algorithm combined with Novelty Search to increase the genetic diversity of the agent population and explore the problem space without specifying direct objectives. These conclusions suggest that even with a low number of simple inputs, and simple fitness functions, agents are quickly able to achieve a novice amount of expertise in the Snake game using NEAT.</dc:description>
+<dc:title>Fitness Function Design for Neuroevolution in Goal-Finding Game Environments</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Vignesh Kumar K,Sourav R,Shunmuga Velayutham C,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc51">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Microchimica_Acta"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">187</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2020</dc:issued>
+<dc:description>A paper-based colorimetric assay for the determination of bilirubin has been developed. The method is based on the in-situ reduction of chloroauric acid to form gold nanoparticles. A chromatographic paper was patterned using a wax printer. Chloroauric acid was drop-cast onto the reagent zone. In the presence of bilirubin, gold(III) ions are reduced and form gold nanoparticles. This leads to a color change from yellow to purple. The intensity of the purple color (peak at 530 nm) increases with bilirubin concentration in the 5.0 to 1000 mg L-1 range. The detection limit is 1.0 mg L-1. For the quantification of bilirubin, images were captured using a digital camera, and data were processed with the help of machine learning-based supervised prediction using Random Forest classification. The method was applied to the determination of bilirubin in urine samples. The spiked urine samples exhibit more than 95% recovery. [Figure not available: see fulltext.].</dc:description>
+<dc:title>Paper-based device for the colorimetric assay of bilirubin based on in-situ formation of gold nanoparticles</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Edachana Resmi P,Kumaresan Abishek,Balasubramanian Vidhya,Thiagarajan Ramachandran,Nair Bipin G,Thekkedath Gopalakrishnan Satheesh Babu</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc52">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Journal_of_Ambient_Intelligence_and_Humanized_Computing"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-07-2019</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2621-2632</pages>
+<dc:description>Indoor pervasive applications depend on reliable indoor localization solutions. Indoor localization using WiFi is gaining ubiquitous usage owing to its simplicity and inexpensiveness. A conventional method of localization is trilateration, which can be accomplished using signal strength or time of flight of a radio signal between receiver and transmitter. However, trilateration is prone to errors in accuracy that can occur due to various factors. A common reason for the failure of trilateration is due to the errors in distance estimation resulting in a poor quality of trilateration. In this paper, we propose a novel weighted adaptive location estimation (WALE) algorithm. The proposed WALE algorithm provides an accurate localization in comparison to trilateration by taking into account the quality and properties of the circle overlaps. Based on the overlap properties a distance re-estimation and classification of points based on whether they are trilaterable is performed. A maximum likelihood estimation over a weighted grid of this region provides the location estimate. Our experiments over real indoor test-beds have demonstrated that our algorithm provides high accuracies with high stability in comparison to other algorithms. We achieve high accuracies ranging from 1.20 to 2.20 m in majority of the cases and an average of 2.98 m in a large office space with a standard deviation of 1.65.</dc:description>
+<dc:title>WALE: a weighted adaptive location estimation algorithm</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sundar Darshak,Sendil Siddharth,Subramanian Vasanth,Balasubramanian Vidhya</amrita:authors>    
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc53">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Computer_Science_(including_subseries_Lecture_Notes_in_Artificial_Intelligence_and_Lecture_Notes_in_Bioinformatics)"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11474 LNCS</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2019</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">174-187</pages>
+<dc:description>WiFi based indoor and semi-indoor localization techniques are essential components of indoor location-based services. Calibration-free techniques for WiFi signal strength based indoor localization can help make indoor localization systems scalable, cost-effective and easy to deploy. However, distance estimation errors and environmental factors affect the accuracy of non-calibration solutions like trilateration significantly, and addressing the accuracy issue is critical. To help improve accuracy, localization over dual-band WiFi (IEEE 802.11n) which uses both 2.4Â GHz and 5Â GHz bands is a potential alternative. This paper proposes a novel adaptive, weighted trilateration technique that uses the behavior of these two bands under different conditions. An iterative heuristic approach based on the characterization of the behavior of the bands is employed to determine the most likely position of a smart phone. Additionally optimization strategies are applied to improve the time complexity of this approach. Experiments conducted in different indoor environments show that our approach performs better than other non-calibration signal strength based approaches in terms of accuracy, and also reduces the worst case error.</dc:description>
+<dc:title>A Dynamic Weighted Trilateration Algorithm for Indoor Localization Using Dual-Band WiFi</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mathivannan S,Srinath S,Shashank R,Aravindh R,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc54">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#International_Journal_of_Wireless_Information_Networks"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-06-2018</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">186-199</pages>
+<dc:description>Localization of assets is a critical component of smart building applications. This problem involves a lot of challenges and gets even more challenging when a consistently high level of accuracy has to be ensured while employing long-range RFID readers. In general, these antennas are placed so that there is some level of overlap of their ranges of influence, in order to support asset tracking with high precision. However, it is desirable to reduce the level of overlap when employing multiple readers for large-scale asset tracking, due to the high cost of these RFID readers and antennas. In such scenarios, it is important to maintain accuracy while increasing the coverage area of the readers, and for this a robust localization algorithm is necessary. This paper describes a novel hybrid indoor localization algorithm that combines the transmission power level control and the signal strength information in an intelligent manner to locate assets accurately. The algorithm does not require much calibration and is easily scalable. Additionally, it allows for both coarse and fine-grained location estimation depending on application requirements. Our experiments in real indoor environments, and with different degrees of overlap between long-range RFID antennas show that our algorithm provides higher accuracy in comparison to other algorithms, and is also consistent.</dc:description>
+<dc:title>A Scalable and Hybrid Location Estimation Algorithm for Long-Range RFID Systems</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dharanitejaswini K,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc55">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Geospatial_Infrastructure,_Applications_and_Technologies:_India_Case_Studies"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2018</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">93-105</pages>
+<dc:description>This paper discusses the design and implementation details of a novel toolkit for indoor spaces (InGIST) that supports configuring indoor spaces and querying over them. InGIST implements a hybrid indoor model that effectively combines spatial, geometric and topological models, over which a query language developed as part of this project, operates to support different types of indoor queries. InGIST also supports the IndoorGML standards and allows for exporting to IndoorGML from various formats and querying over IndoorGML. The overall framework and the model are discussed and using use cases and screenshots the different functionalities and salient features of InGIST are highlighted.</dc:description>
+<dc:title>InGIST: A queryable and configurable indoorGIS toolkit</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Balasubramanian V</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc56">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Journal_of_Intelligent_Information_Systems"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-06-2017</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">477-498</pages>
+<dc:description>E-Learning repositories and digital libraries are fast becoming important sources for gathering information and learning material. Such systems must therefore provide services to support the learning needs of their users. When a retrieval system shows how its documents relate to each other semantically, a user gets the liberty to choose from different material, and direct his/her study in a focused manner. This calls for a model that identifies types of document relationships, that need to address different aspects of learning. This article defines three such types and a unique statistical model that can automatically identify them in technical/scientific documents. The model defines measures to quantify the degree of relatedness based on distinct statistical patterns exhibited by the common terms in a pair of documents. This approach does not strictly require a knowledge base or hypertext for identifying the characteristic relationship between two documents. Such a statistical model can be extended to build further relatedness types and can be used alongside various other techniques in digital library recommendation engines. Our experiments over a large number of technical documents show that our techniques effectively extract the different types of relationships between documents.</dc:description>
+<dc:title>A statistical approach for modeling inter-document semantic relationships in digital libraries</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Muralikumar Jeyavaishnavi,Seelan Sri Ananda,Vijayakumar Narendranath,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc57">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Journal_of_Intelligent_Information_Systems"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-02-2016</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">121-145</pages>
+<dc:description>The rapidly increasing availability of e-learning content and lecture videos over the internet, has brought forth an imperative need for developing effective content based retrieval systems. Comprehensive metadata extraction and support for topic-level search within videos are key factors in developing such systems. In this paper, we propose a multimodal metadata extraction system which extracts an optimal set of keyphrases and topic based segments that effectively summarize the content of a lecture video. The extraction process utilizes features from both audio transcripts and slide content in video streams. A hybrid approach combining a Naive Bayes classifier and a rule-based refiner is used for effective retrieval of the metadata in a lecture. The proposed content-descriptive metadata extraction technique has been evaluated using actual lecture videos from different sources, and our results show that our multimodal approach is effective in summarizing the lectures content, potentially improving the user experience during retrieval and browsing.</dc:description>
+<dc:title>A multimodal approach for extracting content descriptive metadata from lecture videos</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Balasubramanian Vidhya,Doraisamy Sooryanarayan Gobu,Kanakarajan Navaneeth Kumar</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc58">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#ICINCO_2016_-_13th_International_Conference_on_Informatics_in_Control,_Automation_and_Robotics,_Doctoral_Consortium"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2016-January</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2016</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">436-445</pages>
+<dc:description>Indoor localization is a vital part of autonomous robots. Obtaining accurate indoor localization is difficult in challenging indoor environments where external infrastructures are unreliable and maps keep changing. In such cases the robot should be able to localize using their on board sensors. IMU sensors are most suitable due to their cost effectiveness. We propose a novel approach that aims to improve the accuracy of IMU based robotic localization by analyzing the performance of gyroscope and encoders under different scenarios, and integrating them by exploiting their advantages. In addition the angle computed by robots to avoid obstacles as they navigate, is used as an additional source of orientation estimate and appropriately integrated using a complementary filter. Our experiments that evaluated the robot over different trajectories demonstrated that our approach improves the accuracy of localization over applicable existing techniques.</dc:description>
+<dc:title>A robust approach for improving the accuracy of IMU based indoor mobile robot localization</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Murthy Suriya D,Srivenkata Krishnan S,Sundarrajan G,Kiran Kassyap S,Bhagwanth Ragul,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc59">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#2015_International_Conference_on_Advances_in_Computing,_Communications_and_Informatics,_ICACCI_2015"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">24-09-2015</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1298-1307</pages>
+<dc:description>With the emergence of the semantic web, effective knowledge representation has gained importance. Statistically generated semantic networks are simple representations whose semantic power is yet to be completely explored. Though, these semantic networks are created with simple statistical measures without much overhead, they have the potential to express the semantic relationship between concepts. In this paper, we explore the capability of such networks and enhance them with concept hierarchies to serve as better knowledge representations. The concept hierarchies are built based on the level of importance of concepts. The level of importance/coverage of a concept within the given set of documents has to be taken into account to build an effective knowledge representation. In this paper, we provide a domain-independent, graph based approach for identifying the level of importance of each concept from the statistically generated semantic network which represents the entire document set. Insights about the depth of every concept is obtained by analysing the graph theoretical properties of the statistically generated semantic network. A generic concept hierarchy is created using a greedy strategy, and the original semantic network is reinforced with this concept hierarchy. Experiments over different data sets demonstrate that our approach works effectively in classifying concepts and generating taxonomies based on it, thereby effectively enhancing the semantic network.</dc:description>
+<dc:title>Enhancing statistical semantic networks with concept hierarchies</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Xavier Sofia Francis,Selvaraj Lakshmi Priyanka,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc60">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#ACM_International_Conference_Proceeding_Series"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13-15-July-2015</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">13-07-2015</dc:issued>
+<dc:description>Recommender systems have become very prominent over the past decade. Methods such as collaborative filtering and knowledge based recommender systems have been developed extensively for non-customizable products. However, as manufacturers today are moving towards customizable products to satisfy customers, the need of the hour is customizable product recommender systems. Such systems must be able to capture customer preferences and provide recommendations that are both diverse and novel. This paper proposes an approach to building a recommender system that can be adapted to customizable products such as desktop computers and home theater systems. The Customizable Product Recommendation problem is modeled as a special case of the Multiple Choice Knapsack Problem, and an algorithm is proposed to generate desirable product recommendations in real-Time. The performance of the proposed system is then evaluated.</dc:description>
+<dc:title>Recommending customizable products: A multiple choice knapsack solution</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sivaramakrishnan Aravind,Krishnamachari Madhusudhan,Balasubramanian Vidhya</amrita:authors>    
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc61">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#2015_IEEE_10th_International_Conference_on_Intelligent_Sensors,_Sensor_Networks_and_Information_Processing,_ISSNIP_2015"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">13-05-2015</dc:issued>
+<dc:description>Radio Frequency Identification (RFID) is widely used in indoor positioning systems for object tracking and localization. However, there are several challenges that are yet to be addressed especially in 3-D space. When objects are cluttered densely, an arrangement synonymous to that of heaps of haphazardly arranged files in an office, locating and retrieving a file manually from the heap becomes a laborious task. In this paper, we address the challenge of localization and retrieval of objects in cluttered environments using passive RFID tags, by developing a novel indoor path loss translational model that considers the signal properties across the clutter. The proposed InPLaCE RFID system estimates the position of the object within a clutter by employing a robust translation model that accounts for the properties of the clutter and helps compensate for estimation errors over existing path loss models. Our experiments over different cluttered environments show that the proposed translational model improves the localization accuracy of objects over existing path loss models.</dc:description>
+<dc:title>InPLaCE RFID: Indoor path loss translation for object localization in cluttered environments</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chandrasekaran Vishal,Narayan Keshav,Vasani Romil Kumar,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc62">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#2014_Ubiquitous_Positioning_Indoor_Navigation_and_Location_Based_Service,_UPINLBS_2014_-_Conference_Proceedings"/> 
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">05-02-2015</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">203-212</pages>
+<dc:description>Many of the indoor applications like navigation, indoor localization, object tracking require an indoor map. Indoor environments are dynamic in nature because of the objects present in it. To capture the essence of the indoor environment, it is essential to perform an object level mapping of an indoor space. This is because an object has the potential to alter the map of an indoor environment. Mapping a huge indoor environment could prove to be costly in terms of time with high infrastructure dependency. This compels us to find a simple solution in terms of cost, time and reliability to build an indoor map. The proposed solution should have minimal infrastructure dependence, so that it can be used in situations like disaster and rapid response scenarios, where the available infrastructure is minimal and time is of essence. We propose a Radio Frequency Identification(RFID) based approach which performs an object level mapping of the indoor environment using a portable RFID reader, RFID Ultra High Frequency(UHF) passive tags and inertial navigation sensors(INS). This approach identifies each object in the indoor environment using one or more passive tags. A novel algorithm has been developed which accurately maps the objects present in the indoor space. It is easily scalable to map huge indoor environments and can be applied without any intensive manual labor or expensive equipments. Our experiments show that this approach generates object level indoor maps with high accuracy.</dc:description>       
+<dc:title>Object level mapping of an indoor environment using RFID</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Malla Hemanth,Purushothaman Preethish,Rajan Shivnesh V,Balasubramanian Vidhya</amrita:authors> 
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc63">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Procedia_Computer_Science"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2015</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">461-469</pages>
+<dc:description>People counting has a wide range of applications in the context of pervasive systems. These applications range from efficient allocation of resources in smart buildings to handling emergency situations. There exist several vision based algorithms for people counting. Each algorithm performs differently in terms of efficiency, flexibility and accuracy for different indoor scenarios. Hence, evaluating these algorithms with respect to different application scenarios, environment conditions and camera orientations will provide a better choice for actual deployment. For this purpose, in our paper the most commonly implemented Frame Differencing, Circular Hough Transform and Histogram of Oriented Gradient based methods are evaluated with respect to different factors like camera orientation, lighting, occlusion etc. The performance of these algorithms under different scenarios demonstrates the need for more accurate and faster people counting algorithms.</dc:description>
+<dc:title>A Comparative Study of Vision Based Human Detection Techniques in People Counting Applications</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Raghavachari Chakravartula,Aparna V,Chithira S,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc64">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Computer_Science_(including_subseries_Lecture_Notes_in_Artificial_Intelligence_and_Lecture_Notes_in_Bioinformatics)"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8629</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2015</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">203-216</pages>
+<dc:description>Wi-Fi based Indoor Localization is commonly used in pervasive systems due to its ease of use and relatively low cost. In recent times, IEEE 802.11n is gaining more attention due to the operation of devices in dual band (2.4GHz and 5 GHz) simultaneously. However the utility of dual band in Wi-Fi indoor localization is still a subject of study and has not been widely implemented. The focus of this paper is to evaluate the feasibility of using both these bands by comparing their indoor localization performance using fingerprinting techniques in a real indoor environment. The effects of interference and localization accuracy are the subject of the experimental study. Based on the study, we propose intelligent policies which effectively utilize the advantages of both the bands. Our experiments and analysis have demonstrated the effectiveness of our policies in improving the accuracy of indoor localization.</dc:description>
+<dc:title>A pragmatic approach for effective indoor localization using IEEE 802.11n</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Shanmugaapriyan P,Chitra H,Aiswarya E,Balasubramanian Vidhya,Kumar S Ashok</amrita:authors>    
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc65">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Computer_Science_(including_subseries_Lecture_Notes_in_Artificial_Intelligence_and_Lecture_Notes_in_Bioinformatics)"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8487 LNCS</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2014</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">360-373</pages>
+<dc:description>WiFi Fingerprinting techniques are widely used for indoor localization needs, due to better accuracy guarantees. However, the accuracy is limited by the freshness of the radio map, which is used for localization. Over time this radio map might be incompatible due to the changes in signal strength, a consequence of the dynamic nature of the environment. Therefore, repeated radio map calibration becomes a necessity. Currently radio maps are either manually calibrated, use additional infrastructure or complex algorithms to account for the radio map errors. There is therefore a need for a methodology to update the radio map with minimal additional overhead. This paper proposes a crowdsourcing approach which uses data collected from users of the localization system to maintain the freshness of the radio map. This approach leverages inertial sensors present in commonly used handheld devices, like mobile phones and tablets using which, a trajectory of the path of each user is computed. This trajectory is then coupled with the knowledge of the physical map under consideration to get the real time Received Signal Strength Indicator (RSSI) values at the reference points (RPs). A novel cluster based RSSI propagation policy is proposed where the real time RSSI values obtained are propagated within the clusters. Extensive experiments of our localization system implemented in a real indoor environment shows that this approach maintains radio map freshness while keeping the cost of update low and without need for extra infrastructure. © 2014 Springer International Publishing Switzerland.</dc:description>
+<dc:title>A robust approach for maintenance and refactoring of indoor radio maps</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Krishnan Prasanth,Krishnakumar Sowmyanarayanan,Seshadri Raghav,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc66">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Proceedings_-_2012_IEEE_International_Conference_on_Technology_Enhanced_Education,_ICTEE_2012"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">02-07-2012</dc:issued>
+<dc:description>Keyphrases are essential meta-data that summarize the contents of an instructional video. In this paper, we present a domain independent, statistical approach for automatic keyphrase extraction from audio transcripts of video lectures. We identify new features in audio transcripts, that capture key patterns characterizing keyphrases in lecture videos. A system for keyphrase extraction is designed that uses a supervised machine learning algorithm, based on a Naive-Bayes classifier to extract relevant keyphrases. Our extensive experimental studies show that our system extracts more relevant keywords than existing approaches. The paper also evaluates the performance of the proposed keyphrase extraction method for different categories of lectures. The extracted keyphrases are used further as features for automatic topic based segmentation of the video lectures. This process of automatic keyphrase extraction and segmentation results in a section-wise annotated video lecture which can be effectively viewed in a lecture browser. © 2012 IEEE.</dc:description>
+<dc:title>Automatic keyphrase extraction and segmentation of video lectures</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Balagopalan Arun,Balasubramanian Lalitha Lakshmi,Balasubramanian Vidhya,Chandrasekharan Nithin,Damodar Aswin</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc67">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Proceedings_of_the_1st_Amrita_ACM-W_Celebration_of_Women_in_Computing_in_India,_A2CWiC'10"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-12-2010</dc:issued>
+<dc:description>nan</dc:description>
+<dc:title>Proceedings of the 1st Amrita ACM-W Celebration of Women in Computing in India, A2CWiC'10: Foreword</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Achuthan Krishnashree,Burogohain Gayatri,Parameswaran Latha,Balasubramanian Vidhya</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc68">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Proceedings_of_the_1st_Amrita_ACM-W_Celebration_of_Women_in_Computing_in_India,_A2CWiC'10"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-12-2010</dc:issued>
+<dc:description>Social Computing has evolved with the purpose of triggering the collective consciousness of human beings thereby leading them to common goals. This bringing together of people has opened up a cornucopia of possibilities in education. However the large scale implementation of social computing in a university setting is still not widespread as one would expect. This paper tries to understand the reasons for this lack of widespread use by getting actual user perspectives in an Indian university. An initial recommendation for practical implementation has also been discussed. © 2010 ACM.</dc:description>
+<dc:title>Social computing in universities: An evaluation of practicality</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Rekha V Smrithi,Balasubramanian Vidhya,Adinarayanan V</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc69">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Advances_in_Database_Technology_-_EDBT_2010_-_13th_International_Conference_on_Extending_Database_Technology,_Proceedings"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">19-05-2010</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">394-405</pages>
+<dc:description>This paper considers the problem of Multi-Geography Route Planning (MGRP) where the geographical information may be spread over multiple heterogeneous interconnected maps. We first design a flexible and scalable representation to model individual geographies and their interconnections. Given such a representation, we develop an algorithm that exploits precomputation and caching of geographical data for path planning. A utility-based approach is adopted to decide which paths to precompute and store. To validate the proposed approach we test the algorithm over the workload of a campus level evacuation simulation that plans evacuation routes over multiple geographies: indoor CAD maps, outdoor maps, pedestrian and transportation networks, etc. The empirical results indicate that the MGRP algorithm with the proposed utility based caching strategy significantly outperforms the state of the art solutions when applied to a large university campus data under varying conditions. Copyright 2010 ACM.</dc:description>
+<dc:title>Efficient and scalable multi-geography route planning</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Balasubramanian Vidhya,Kalashnikov Dmitri V,Mehrotra Sharad,Venkatasubramanian Nalini</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc70">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Proceedings_of_the_International_Conference_on_Autonomous_Agents"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2006</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-12-2006</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1469-1470</pages>
+<dc:description>Being able to realistically simulate humans in emergency response activities is a key challenge for advancing the field of information technology for emergency response. Building good human models enables testing information technology solutions in any emergency response simulated scenario. This paper presents an agent behavior model for mimicking peoples's behavior on emergency response activities. The accompanying demo demonstrates a concrete model for evacuations integrated with an emergency drill simulation environment. Copyright 2006 ACM.</dc:description>
+<dc:title>Synthetic humans in emergency response drills</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Massaguer Daniel,Balasubramanian Vidhya,Mehrotra Sharad,Venkatasubramanian Nalini</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc71">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Lecture_Notes_in_Computer_Science_(including_subseries_Lecture_Notes_in_Artificial_Intelligence_and_Lecture_Notes_in_Bioinformatics)"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3975 LNCS</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2006</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">237-248</pages>
+<dc:description>Responding to natural or man-made disasters in a timely and effective manner can reduce deaths and injuries, contain or prevent secondary disasters, and reduce the resulting economic losses and social disruption. Appropriate IT solutions can improve this response. However, exhaustive and realistic validation of these IT solutions is difficult; proofs are not available, simulations lack realism, and drills are expensive and cannot be reproduced. This paper presents DrillSim: a simulation environment that plays out the activities of a crisis response (e.g., evacuation). It has capabilities to integrate real-life drills into a simulated response activity using an instrumented environment with sensing and communication capabilities. IT solutions can be plugged in the simulation system to study their effectiveness in disaster management and response. This way, by using a simulation coupled with an on-going drill, IT solutions can be tested in a less expensive but realistic scenario. © Springer-Verlag Berlin Heidelberg 2006.</dc:description>
+<dc:title>DrillSim: A simulation framework for emergency response drills</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Balasubramanian Vidhya,Massaguer Daniel,Mehrotra Sharad,Venkatasubramanian Nalini</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc72">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#ACM_Multimedia_2004_-_proceedings_of_the_12th_ACM_International_Conference_on_Multimedia"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-12-2004</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">750-751</pages>
+<dc:description>GURU is a distance-learning environment that renders multimedia information to users with disabilities in an accessible manner. It is an implementation framework developed as part of an effort to provide accessible multimedia information to end users with perceptual (visual and auditory), cognitive or motor impairments. GURU is based on the MPEG-4 standard, and it modifies MP4 content and the presentation of the different objects in the scene dynamically based on users' visual, auditory and motor abilities. This paper briefly describes the implementation of the prototype framework and illustrates sample adaptations as implemented in this framework.</dc:description>
+<dc:title>GURU: A multimedia distance-learning framework for users with disabilities</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Balasubramanian Vidhya,Venkatasubramanian Nalini</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc73">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Proceedings_of_SPIE_-_The_International_Society_for_Optical_Engineering"/>
+<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5019</basic:volume>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">26-05-2003</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">45-56</pages>
+<dc:description>Multimedia transmission over wide-area networks currently only considers the server and network resource constraints and client device capabilities. It is also essential that the accessibility of the multimedia content for different users with diverse capabilities and disabilities be considered. In this paper we develop a transcoding technique to present the multimedia content to suit diverse disabled user groups by using an ability based classification approach. Using ability-based prioritization, the appropriate alternate modalities and quality levels are chosen to replace the inaccessible modalities. The transcoding process allows for refinements to cater to specific types and degrees of impairments. Our performance results illustrate the benefits of the ability-based transcoding approach.</dc:description>
+<dc:title>Server transcoding of multimedia data for cross-disability access</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Balasubramanian Vidhya,Venkatasubramanian Nalini</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</amrita:totalCitations>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc74">
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>
+<dc:publisher rdf:resource="http://www.amrita.org/terms#Proceedings_ITCC_2003,_International_Conference_on_Information_Technology:_Computers_and_Communications"/>
+<dc:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">01-01-2003</dc:issued>
+<pages rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">115-119</pages>
+<dc:description>Distance learning applications provide valuable opportunities to users with disabilities. To enhance the accessibility of the distance-learning portal to vision impaired users, we utilize analytical studies on human vision to develop a visibility based adaptation algorithm. Using this adaptation the quality levels and layout of the portal is adapted to enhance the visibility, to users with various vision impairments.</dc:description>
+<dc:title>Adapting a multimedia distance learning environment for vision impairments</dc:title>
+<amrita:authors rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Balasubramanian V,Venkatasubramanian N</amrita:authors>
+<amrita:totalCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</amrita:totalCitations>
 </owl:NamedIndividual>
 
 

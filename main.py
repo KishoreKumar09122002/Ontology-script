@@ -2,7 +2,7 @@ import pandas as pd
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 # Load the data with 'latin1' encoding
-df = pd.read_csv('gowtham.csv', encoding='latin1')
+df = pd.read_csv('vidhya.csv', encoding='latin1')
 df = df.drop('subtypeDescription', axis=1)
 
 for i in df['publicationName'].unique():
@@ -12,15 +12,16 @@ for i in df['publicationName'].unique():
         </owl:NamedIndividual>''')
 
 for i in range(0, len(df)):
-    print('<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc' + str(i) + '">')
+    j = i+49
+    print('<owl:NamedIndividual rdf:about="http://www.amrita.org/terms#Doc' + str(j) + '">')
     print('<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>')
-    if df.iloc[i,2] == 'Conference':
+    if df.iloc[i,2] == 'Conference Proceeding':
         print('<rdf:type rdf:resource="http://purl.org/ontology/bibo/Conference"/>')
     elif df.iloc[i,2] == 'Journal':
         print('<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>')
-    elif df.iloc[i,2] == 'Book':
+    elif df.iloc[i,2] == 'Book Series':
         print('<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>')
-    df['publicationName'][i] = df['publicationName'][i].replace(' ','_')
+    df.at[i, 'publicationName'] = df.at[i, 'publicationName'].replace(' ', '_')
     print(f'<dc:publisher rdf:resource="http://www.amrita.org/terms#{df["publicationName"][i]}"/>')
     if pd.isna(df['volume'][i]) == False:
         print(f'<basic:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">{df["volume"][i]}</basic:volume>')
